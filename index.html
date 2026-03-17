@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Movie Explorer</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 Movie Explorer</h1>
+
+    <input id="searchInput" placeholder="Buscar serie...">
+    <button onclick="search()">Buscar</button>
+
+    <select id="genreFilter" onchange="filterGenre()">
+        <option value="All">Todos</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Action">Action</option>
+        <option value="Crime">Crime</option>
+    </select>
+
+    <select id="perPage" onchange="changePerPage()">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+    </select>
+</header>
+
+<main>
+    <div id="shows" class="grid"></div>
+
+    <div class="pagination">
+        <button onclick="prevPage()">⬅</button>
+        <span id="page"></span>
+        <button onclick="nextPage()">➡</button>
+    </div>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
