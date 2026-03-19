@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.pagination {
+    text-align: center;
+    margin-bottom: 20px;
+}
