@@ -234,3 +234,33 @@ button:hover {
         flex-direction: column;
     }
 }
+
+.detail-card img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.detail-card img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
