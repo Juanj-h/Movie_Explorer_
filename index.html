@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer | TVMaze</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <h1 class="logo">Movie<span>Explorer</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="favorites.html">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar serie o película...">
+                <button id="search-btn">Buscar</button>
+            </div>
+            <div id="search-history" class="history-tags">
+
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <select id="genre-filter">
+                <option value="all">Todos los géneros</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedia</option>
+                <option value="Action">Acción</option>
+                <option value="Crime">Crimen</option>
+            </select>
+
+            <div class="per-page-selector">
+                <span>Mostrar:</span>
+                <button class="page-size-btn" data-size="10">10</button>
+                <button class="page-size-btn active" data-size="20">20</button>
+                <button class="page-size-btn" data-size="50">50</button>
+            </div>
+        </section>
+
+        <div id="movies-grid" class="movies-grid">
+
+        </div>
+
+        <section class="pagination">
+            <button id="prev-page" disabled>Anterior</button>
+            <span id="page-indicator">Página 1</span>
+            <button id="next-page">Siguiente</button>
+        </section>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
