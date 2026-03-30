@@ -2,28 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Favoritos - Movie Explorer</title>
+    <title>Favoritos - Movie Explorer</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav class="container">
-            <h1 class="logo">Movie<span>Explorer</span></h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="favorites.html" class="active">Favoritos</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="container">
-        <h2>Mis Series Favoritas</h2>
-        <div id="favorites-grid" class="movies-grid">
-            <!-- Favoritos desde LocalStorage -->
-        </div>
-    </main>
+<header>
+    <nav class="container">
+        <h1 class="logo">Movie<span>Explorer</span></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="favorites.html" class="active">Favoritos</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <script src="js/main.js" type="module"></script>
+<main class="container">
+
+    <h2>Mis Favoritos</h2>
+
+    <!-- 🔥 MISMO GRID -->
+    <div id="favorites-container" class="movies-grid"></div>
+
+</main>
+
+<script type="module" src="js/favorites.js"></script>
+
 </body>
 </html>
